@@ -1,0 +1,44 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Home";
+}
+
+<style>
+    .main-hero {
+        min-height: 70vh; 
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        text-align: center;
+        margin-bottom: 1rem;
+    }
+
+    .feature-row {
+        margin-top: 1rem; 
+    }
+</style>
+
+<div class="container">
+    <div class="main-hero">
+        <h1 class="display-5 text-dark mb-2">Invoice Manager</h1>
+        <p class="lead mb-3">Simplify your invoicing process. Create, manage, and track your invoices with ease.</p>
+        <a href="/Invoices" class="btn btn-primary btn-md">View Invoices</a>
+    </div>
+
+    <div class="row text-center feature-row">
+        <div class="col-md-4">
+            <h6>🧾 Create Invoices</h6>
+            <p class="small">Generate professional invoices in seconds.</p>
+        </div>
+        <div class="col-md-4">
+            <h6>📊 Track Payments</h6>
+            <p class="small">Monitor paid and pending invoices easily.</p>
+        </div>
+        <div class="col-md-4">
+            <h6>📂 Manage Records</h6>
+            <p class="small">Easily add, edit, and delete invoice records.</p>
+        </div>
+    </div>
+</div>
