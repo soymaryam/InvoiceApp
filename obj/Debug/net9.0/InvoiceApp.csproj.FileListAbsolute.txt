@@ -227,3 +227,4 @@ C:\Users\marya\source\repos\InvoiceApp\InvoiceApp\obj\Debug\net9.0\refint\Invoic
 C:\Users\marya\source\repos\InvoiceApp\InvoiceApp\obj\Debug\net9.0\InvoiceApp.pdb
 C:\Users\marya\source\repos\InvoiceApp\InvoiceApp\obj\Debug\net9.0\InvoiceApp.genruntimeconfig.cache
 C:\Users\marya\source\repos\InvoiceApp\InvoiceApp\obj\Debug\net9.0\ref\InvoiceApp.dll
+C:\Users\marya\source\repos\InvoiceApp\InvoiceApp\obj\Debug\net9.0\InvoiceApp.sourcelink.json
