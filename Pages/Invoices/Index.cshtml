@@ -7,6 +7,7 @@
 
 <div class="container mt-4">
 
+<<<<<<< HEAD
     <h2 class="text-center mb-3">Invoices</h2>
     <a class="btn btn-primary mb-4" asp-page="/Invoices/Create">New Invoice</a>
 
@@ -60,6 +61,57 @@
         </tbody>
     </table>
 </div>
+=======
+<table id="invoiceTable" class="table">
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>Invoice No</th>
+            <th>Status</th>
+            <th>Client</th>
+            <th>Total Price</th>
+            <th>IssueDate</th>
+            <th>Due Date</th>
+            <th>Action</th>
+        </tr>
+    </thead>
+    <tbody class="table-group-divider">
+        @foreach(var invoice in Model.invoiceList)
+        {
+            <tr>
+                <td>@invoice.Id</td>
+                <td>@invoice.Number</td>
+                <td>
+                    @if (invoice.Status == "Paid")
+                    {
+                        <span class="badge bg-success text-light">Paid</span>
+                    }
+                    else if (invoice.Status == "Pending")
+                    {
+                        <span class="badge bg-warning text-dark">Pending</span>
+                    }
+                    else
+                    {
+                        <span class="badge bg-secondary">@invoice.Status</span>
+                    }
+                </td>
+                <td>@invoice.ClientName</td>
+                <td>@(invoice.Quantity * invoice.UnitPrice)$</td>
+                <td>@invoice.IssueDate</td>
+                <td>@invoice.DueDate</td>
+                <td style="white-space:nowrap">
+                    <a class="btn btn-primary btn-sm" asp-page="/Invoices/Edit" asp-route-id="@invoice.Id" title="Edit">
+                        <i class="bi bi-pencil-fill"></i>
+                    </a>
+                    <a class="btn btn-danger btn-sm" asp-page="/Invoices/Delete" asp-route-id="@invoice.Id" title="Delete">
+                        <i class="bi bi-trash-fill"></i>
+                    </a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+>>>>>>> c7c306df19128a6b925901f225eeefe66f7eef09
 
 @section Scripts {
     <script>
@@ -67,4 +119,8 @@
             $('#invoiceTable').DataTable();
         });
     </script>
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> c7c306df19128a6b925901f225eeefe66f7eef09
