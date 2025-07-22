@@ -1,5 +1,5 @@
+using InvoiceApp.Data;
 using InvoiceApp.Models;
-using InvoiceApp.Services;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 
@@ -7,12 +7,12 @@ namespace InvoiceApp.Pages.Invoices
 {
     public class CreateModel : PageModel
     {
-        private readonly ApplicationDbContext context;
+        private readonly InvoiceContext context;
 
         [BindProperty]
         public InvoiceDto InvoiceDto { get; set; } = new();
 
-        public CreateModel(ApplicationDbContext context)
+        public CreateModel(InvoiceContext context)
         {
             this.context = context;
         }

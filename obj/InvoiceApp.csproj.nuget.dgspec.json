@@ -1,36 +1,37 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\marya\\source\\repos\\InvoiceApp\\InvoiceApp\\InvoiceApp.csproj": {}
+    "C:\\Users\\Moufi\\InvoiceApp\\InvoiceApp.csproj": {}
   },
   "projects": {
-    "C:\\Users\\marya\\source\\repos\\InvoiceApp\\InvoiceApp\\InvoiceApp.csproj": {
+    "C:\\Users\\Moufi\\InvoiceApp\\InvoiceApp.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\marya\\source\\repos\\InvoiceApp\\InvoiceApp\\InvoiceApp.csproj",
+        "projectUniqueName": "C:\\Users\\Moufi\\InvoiceApp\\InvoiceApp.csproj",
         "projectName": "InvoiceApp",
-        "projectPath": "C:\\Users\\marya\\source\\repos\\InvoiceApp\\InvoiceApp\\InvoiceApp.csproj",
-        "packagesPath": "C:\\Users\\marya\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\marya\\source\\repos\\InvoiceApp\\InvoiceApp\\obj\\",
+        "projectPath": "C:\\Users\\Moufi\\InvoiceApp\\InvoiceApp.csproj",
+        "packagesPath": "C:\\Users\\Moufi\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Moufi\\InvoiceApp\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\marya\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Moufi\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
-          "net9.0"
+          "net8.0"
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
-          "net9.0": {
-            "targetAlias": "net9.0",
+          "net8.0": {
+            "targetAlias": "net8.0",
             "projectReferences": {}
           }
         },
@@ -43,14 +44,17 @@
           "enableAudit": "true",
           "auditLevel": "low",
           "auditMode": "direct"
-        },
-        "SdkAnalysisLevel": "9.0.300"
+        }
       },
       "frameworks": {
-        "net9.0": {
-          "targetAlias": "net9.0",
+        "net8.0": {
+          "targetAlias": "net8.0",
           "dependencies": {
             "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[9.0.7, )"
+            },
+            "Microsoft.EntityFrameworkCore.Sqlite": {
               "target": "Package",
               "version": "[9.0.7, )"
             },
@@ -80,7 +84,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.302/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.400/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

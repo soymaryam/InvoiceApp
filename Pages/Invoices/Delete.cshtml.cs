@@ -1,4 +1,4 @@
-using InvoiceApp.Services;
+using InvoiceApp.Data;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 
@@ -6,9 +6,9 @@ namespace InvoiceApp.Pages.Invoices
 {
     public class DeleteModel : PageModel
     {
-        private readonly ApplicationDbContext context;
+        private readonly InvoiceContext context;
 
-        public DeleteModel(ApplicationDbContext context)
+        public DeleteModel(InvoiceContext context)
         {
             this.context = context;
         }

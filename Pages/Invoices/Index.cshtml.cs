@@ -1,5 +1,5 @@
 using InvoiceApp.Models;
-using InvoiceApp.Services;
+using InvoiceApp.Data;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 
@@ -7,10 +7,10 @@ namespace InvoiceApp.Pages.Invoices
 {
     public class IndexModel : PageModel
     {
-        private readonly ApplicationDbContext context;
+        private readonly InvoiceContext context;
 
         public List<Invoice> invoiceList = new();
-        public IndexModel(ApplicationDbContext context)
+        public IndexModel(InvoiceContext context)
         {
             this.context = context;
         }

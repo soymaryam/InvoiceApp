@@ -1,5 +1,5 @@
+using InvoiceApp.Data;
 using InvoiceApp.Models;
-using InvoiceApp.Services;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 
@@ -12,9 +12,9 @@ namespace InvoiceApp.Pages.Invoices
 
         public Invoice Invoice { get; set; } = new();
 
-        private ApplicationDbContext context;
+        private InvoiceContext context;
 
-        public EditModel(ApplicationDbContext context)
+        public EditModel(InvoiceContext context)
         {
             this.context = context;
         }
